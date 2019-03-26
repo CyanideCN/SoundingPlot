@@ -130,10 +130,10 @@ class Skew_T(SkewT):
         self.plot(self.p_i, prof, 'k', linewidth=2)
         if cin.magnitude < 0:
             chi = -1 * cin.magnitude
-            skew.shade_cin(self.p_i, self.t_i, prof)
+            self.shade_cin(self.p_i, self.t_i, prof)
         elif cin.magnitude > 0:
             chi = cin.magnitude
-            skew.shade_cin(self.p_i, self.t_i, prof)
+            self.shade_cin(self.p_i, self.t_i, prof)
         else:
             chi = 0.
         self.shade_cape(self.p_i, self.t_i, prof)
